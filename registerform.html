@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            font-family: cursive;
+        }
+        body{
+
+            background-color: papayawhip;
+        }
+        form{
+            width:100%;
+            background-color: peachpuff;
+            
+            /* border:1px solid red; */
+        }
+       
+        fieldset,legend,input::placeholder,label,input{
+            padding:0.3rem;
+            text-align: center;
+        }
+        input{
+            padding:1rem;
+            width:60%;
+            height:30px;
+            border-radius: 0.4rem;
+            margin: 0.3rem;
+            caret-color: red;
+            outline: none;
+            border:none;
+        }
+        label{
+            display: block;
+            /* border:1px solid red; */
+        }
+        span,label,legend,input{
+            font-weight: bold;
+        }
+        input:focus{
+            border:5px double purple    ;
+        }
+        button{
+            padding:0.3rem 0.6rem;
+            border-radius:0.3rem;
+        }
+        
+    </style>
+</head>
+<body>
+    
+      <form action="#" method="post" onsubmit="validate()">
+       <fieldset>
+        <legend>Registration Form</legend>
+           <label>Username: <br>
+            <input type="text" name="uname" id="un" placeholder="Enter your name">
+            <span id="unerr"></span>
+           </label>
+
+           <label>Password: <br>
+            <input type="text" name="pass" id="un" placeholder="Enter your password" maxlength="8">
+            <span id="passerr"></span>
+           </label>
+
+           <label>Confirm-password:<br> 
+            <input type="text" name="cpass" id="cp" placeholder="Confirm your password" maxlength="8">
+            <span id="cperr"></span>
+           </label>
+
+           <label>Email:<br> 
+            <input type="text" name="email" id="cp" placeholder="Enter your email-id">
+            <span id="emailerr"></span>
+           </label>
+
+           <label>Mobile number: +91<br> 
+            <input type="tel" name="num" id="num" placeholder="Your 10 digit mobile number" maxlength="10">
+            <span id="numerr"></span>
+           </label>
+
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+       </fieldset>
+      </form>
+    <script>
+
+    </script>
+</body>
+</html>
